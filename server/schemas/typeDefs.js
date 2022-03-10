@@ -1,7 +1,10 @@
 const { gql } = require('apollo-server-express');
 
+
+
+//Creation of typeDefs
 const typeDefs = gql`
-  type User {
+  type Artist {
     _id: ID
     username: String
     email: String
@@ -10,7 +13,7 @@ const typeDefs = gql`
     friends: [User]
   }
 
-  type Thought {
+  type ArtWork {
     _id: ID
     thoughtText: String
     createdAt: String
@@ -33,5 +36,5 @@ const typeDefs = gql`
     thought(_id: ID!): Thought
   }
 `;
-
+//export the typeDefs
 module.exports = typeDefs;
