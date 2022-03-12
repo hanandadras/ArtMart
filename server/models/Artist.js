@@ -59,6 +59,6 @@ artistSchema.virtual('fanCount').get(function() {
   return this.fans.length;
 });
 
-const Artist = model('Artist', userSchema);
+const Artist = model('Artist', artistSchema);
 
 module.exports = Artist;

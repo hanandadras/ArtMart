@@ -1,39 +1,48 @@
 const { gql } = require('apollo-server-express');
 
 
-
 //Creation of typeDefs
 const typeDefs = gql`
   type Artist {
     _id: ID
     username: String
     email: String
-    friendCount: Int
-    thoughts: [Thought]
-    friends: [User]
+    password: String
+    artWork: [ArtWork]
+    fans: [Artist]
   }
 
   type ArtWork {
     _id: ID
-    thoughtText: String
+    description: String
+    image: String
     createdAt: String
-    username: String
-    reactionCount: Int
+    price: Number
     reactions: [Reaction]
   }
 
   type Reaction {
     _id: ID
     reactionBody: String
-    createdAt: String
     username: String
   }
 
+  type User {
+    _id: ID
+    username: String
+    email: String
+    paasword: String
+  }
+
+
+
   type Query {
-    users: [User]
-    user(username: String!): User
-    thoughts(username: String): [Thought]
-    thought(_id: ID!): Thought
+    artists: [Artist]
+    artist(artist: String!): Artist
+    artwork: [ArtWork]
+    artWork(artWork: String!): ArtWork
+   reactions(username: String): [Reaction]
+   reaction(_id: ID!): Reaction
   }
 `;
 //export the typeDefs
