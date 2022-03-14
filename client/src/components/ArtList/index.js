@@ -10,7 +10,7 @@ const Artistlist = ({ artists, title }) => {
       <h3>{title}</h3>
       {artists &&
         artists.map(artist => (
-          <div key={artist._id} className="card mb-3">
+          <div key={artist?._id} className="card mb-3">
             <p className="card-header">
               {artist.username}
               artist on {artist.createdAt}
