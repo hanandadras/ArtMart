@@ -3,9 +3,11 @@ const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 //import typeDefs and resolvers
 const { typeDefs, resolvers } = require('./schemas');
+const {authMiddleware} = require('./utils/auth.js');
 const db = require('./config/connection');
 const PORT = process.env.PORT || 3001;
 const app = express();
+
 
 const startServer = async () => {
   //new appolo server created to pass in schema data

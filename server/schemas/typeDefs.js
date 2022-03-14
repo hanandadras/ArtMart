@@ -17,7 +17,7 @@ const typeDefs = gql`
     description: String
     image: String
     createdAt: String
-    price: Number
+    price: Int
     reactions: [Reaction]
   }
 
@@ -27,15 +27,6 @@ const typeDefs = gql`
     username: String
   }
 
-  type User {
-    _id: ID
-    username: String
-    email: String
-    paasword: String
-  }
-
-
-
   type Query {
     artists: [Artist]
     artist(artist: String!): Artist
@@ -43,6 +34,16 @@ const typeDefs = gql`
     artWork(artWork: String!): ArtWork
    reactions(username: String): [Reaction]
    reaction(_id: ID!): Reaction
+  }
+
+  type Mutation {
+    login(email: String!, password: String!): Auth
+    addArtist(username: String!, email: String!, password: String!): Auth
+  }
+
+  type Auth {
+    token: ID!
+    artist: Artist
   }
 `;
 //export the typeDefs

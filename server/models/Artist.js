@@ -52,6 +52,7 @@ artistSchema.pre('save', async function(next) {
 
 // compare the incoming password with the hashed password
 artistSchema.methods.isCorrectPassword = async function(password) {
+  console.log(await bcrypt.hash(password, 10))
   return bcrypt.compare(password, this.password);
 };
 
