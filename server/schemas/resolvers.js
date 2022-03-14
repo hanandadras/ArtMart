@@ -1,26 +1,36 @@
 const { AuthenticationError, UserInputError } = require('apollo-server-express');
 const { Artist, ArtWork } = require('../models');
+<<<<<<< HEAD
 const { signToken } = require ('../utils/auth');
+=======
+const { AuthenticationError } = require('apollo-server-express');
+>>>>>>> hanan-webtoken
 
 const resolvers = {
   Query: {
     artists: async () => {
-      return Artist.find()
-        .select('-__v -password')
-        .populate('descriptions')
-        .populate('fans');
+      try{
+      return await Artist.find()
+        // .select('-__v -password')
+        // .populate('descriptions')
+        // .populate('fans');
+      }catch(err){
+        console.log(err)
+        throw new AuthenticationError("cannot find artist")
+      }
     },
     artist: async (parent, { artistname }) => {
-      return Artist.findOne({ artistname })
+      return await Artist.findOne({ artistname })
         .select('-__v -password')
         .populate('fans');
         // .populate('descriptions');
     },
     artWork: async (parent, { artWork }) => {
       const params = artWork ? { artWork } : {};
-      return ArtWork.find(params).sort({ createdAt: -1 });
+      return await ArtWork.find(params).sort({ createdAt: -1 });
     },
     artWork: async (parent, { _id }) => {
+<<<<<<< HEAD
       return ArtWork.findOne({ _id });
     },
   },
@@ -48,6 +58,9 @@ const resolvers = {
       }
     const token = signToken(artist);
       return { token, artist };
+=======
+      return await ArtWork.findOne({ _id });
+>>>>>>> hanan-webtoken
     }
   }
   //addArtwork???

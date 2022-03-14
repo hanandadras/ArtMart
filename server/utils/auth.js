@@ -19,8 +19,12 @@ module.exports = {
 
     try {
       const { data } = jwt.verify(token, secret, { maxAge: expiration });
+<<<<<<< HEAD
       //changes req.user into req.artist
       req.artist = data;
+=======
+      req.user = data;
+>>>>>>> hanan-webtoken
     } catch {
       console.log('Invalid token');
     }
@@ -32,6 +36,7 @@ module.exports = {
 
     return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
   },
+<<<<<<< HEAD
 };
 
 
@@ -42,3 +47,6 @@ module.exports = {
 
 
 
+=======
+};
+>>>>>>> hanan-webtoken
