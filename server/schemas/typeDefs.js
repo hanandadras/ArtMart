@@ -17,7 +17,7 @@ const typeDefs = gql`
     description: String
     image: String
     createdAt: String
-    price: Number
+    price: Int
     reactions: [Reaction]
   }
 
