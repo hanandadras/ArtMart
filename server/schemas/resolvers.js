@@ -1,10 +1,6 @@
 const { AuthenticationError, UserInputError } = require('apollo-server-express');
 const { Artist, ArtWork } = require('../models');
-<<<<<<< HEAD
 const { signToken } = require ('../utils/auth');
-=======
-const { AuthenticationError } = require('apollo-server-express');
->>>>>>> hanan-webtoken
 
 const resolvers = {
   Query: {
@@ -30,7 +26,6 @@ const resolvers = {
       return await ArtWork.find(params).sort({ createdAt: -1 });
     },
     artWork: async (parent, { _id }) => {
-<<<<<<< HEAD
       return ArtWork.findOne({ _id });
     },
   },
@@ -58,9 +53,6 @@ const resolvers = {
       }
     const token = signToken(artist);
       return { token, artist };
-=======
-      return await ArtWork.findOne({ _id });
->>>>>>> hanan-webtoken
     }
   }
   //addArtwork???
