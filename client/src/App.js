@@ -8,7 +8,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import { setContext } from '@apollo/client/link/context';
 import NoMatch from './pages/NoMatch';
-
+import Posts from './components/posts/post';
 
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -48,7 +48,7 @@ function App() {
 
             <Route component={NoMatch} />
           </Switch>
-          
+          <Posts></Posts>
           {/* {Auth.loggedIn() ? <Home />:<Signup/>} */}
         </div>
         <Footer />

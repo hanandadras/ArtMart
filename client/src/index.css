@@ -1,6 +1,6 @@
 :root {
-  --primary: #497573;
-  --secondary: #f799e0;
+  --primary: #10eee3;
+  /* --secondary: #e9f799; */
   --tertiary: #b2c2c1;
   --quatrinary: #cadbda;
   --light: #e1f5f4;
@@ -12,6 +12,11 @@
   --spacing-three: 1rem;
   --spacing-four: calc(1rem * 1.5);
   --spacing-five: calc(1rem * 3);
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO5EItJDL2odjSprTuSZbxttCIehgQw44hvw&usqp=CAU");
+  background-size: "cover";
+  height: 100vh;
+  margin-top: -70px;
+  background-repeat: no-repeat;
 }
 
 * {
