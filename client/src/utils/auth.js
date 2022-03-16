@@ -1,6 +1,6 @@
 import decode from 'jwt-decode';
 
-// create a new class to instantiate for a user
+// create a new class to instantiate for an artist
 class AuthService {
   // get user data
   getProfile() {
