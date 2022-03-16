@@ -1,0 +1,32 @@
+[
+    {
+        "username": "Van Go!",
+        "email": "van@van.com",
+        "password": "$2b$10$hGrFH7.iD/CoVN/lyji13.xHWJGY33ljZwgurqCI4mcKxWfTkgZ6S"
+    },
+    {
+        "username": "Mo Neeey",
+        "email": "mon@mon.com",
+        "password": "$2b$10$hGrFH7.iD/CoVN/lyji13.xHWJGY33ljZwgurqCI4mcKxWfTkgZ6S"
+    },
+    {
+        "username": "Tha Vinci",
+        "email": "tha@mon.com",
+        "password": "$2b$10$hGrFH7.iD/CoVN/lyji13.xHWJGY33ljZwgurqCI4mcKxWfTkgZ6S"
+    },
+    {
+        "username": "Da Lee",
+        "email": "dalee@mon.com",
+        "password": "$2b$10$hGrFH7.iD/CoVN/lyji13.xHWJGY33ljZwgurqCI4mcKxWfTkgZ6S"
+    },
+    {
+        "username": "Ma teess",
+        "email": "Mateess@ma.com",
+        "password": "$2b$10$hGrFH7.iD/CoVN/lyji13.xHWJGY33ljZwgurqCI4mcKxWfTkgZ6S"
+    },
+    {
+        "username": "Rem Brandt",
+        "email": "Rem@brandt.com",
+        "password": "$2b$10$hGrFH7.iD/CoVN/lyji13.xHWJGY33ljZwgurqCI4mcKxWfTkgZ6S"
+    }
+]
