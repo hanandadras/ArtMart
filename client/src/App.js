@@ -13,8 +13,8 @@ import NoMatch from './pages/NoMatch';
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 const httpLink = createHttpLink({
-  uri: 'http://localhost:3001/graphql',
-  //uri: '/graphql',
+  // uri: 'http://localhost:3001/graphql',
+  uri: '/graphql',
 
 });
 const authLink = setContext((_, { headers }) => {
