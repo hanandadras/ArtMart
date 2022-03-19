@@ -2,7 +2,7 @@ import React from 'react';
 
 const Artistlist = ({ artists, title }) => {
   if (!artists.length) {
-    return <h3>No Artists Yet</h3>;
+    return <h3>Sign up and start your artistic journey!</h3>;
   }
 
   return (
