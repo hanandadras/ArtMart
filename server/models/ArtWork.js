@@ -7,7 +7,7 @@ const artWorkSchema = new Schema(
   {
     description: {
       type: String, 
-      required: 'Description:',
+      required: false, //'Description:'
       minlength: 1,
       maxlength: 280
     },

@@ -1,6 +1,6 @@
 :root {
-  --primary: #10eee3;
-  /* --secondary: #e9f799; */
+  --primary: #497573;
+  --secondary: #63641c;
   --tertiary: #b2c2c1;
   --quatrinary: #cadbda;
   --light: #e1f5f4;
@@ -52,15 +52,15 @@ h6 {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 
 h4 {
@@ -72,7 +72,7 @@ h5 {
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 p {
@@ -109,7 +109,7 @@ nav a:hover {
   text-align: center;
   width: 100%;
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 .btn,
