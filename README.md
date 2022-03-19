@@ -1,32 +1,33 @@
 # Name
+
 ArtMart
 
 # Description
+
 This is an online gallery/blog/marketplace for artists to showcase their work, show a description fo their work, get fans reactions and sell their pieces.
 
 # Screenshot
 
-
-
-
-
 # Installation
+
 Node is used to install dependencies and npm start to connect the app.
 
 # Technologies used
-Mongodb, Express, React and Node. 
 
+Mongodb, Express, React, cloudinary and Node.
 
 # Roadmap
-Future plans include using a geagraphic APIs to enable artists to pick their geographic region to show their artwork. 
+
+Future plans include using a geagraphic APIs to enable artists to pick their geographic region to show their artwork.
 Also, adding a payment feature to enable purchases to buy art or donations to help artists financially.
 
-
 # Authors and acknowledgment
+
 John Enriquez Perez
 Hanan Dadras
 
 # License
+
 MIT License
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -49,8 +50,10 @@ SOFTWARE.
 Copyright (c) [2022 ] [Hanan Dadras & John Enriquez Perez]
 
 # Project status
+
 The project will be developped further in the future to add any features mentionned in the Roadmap section.
 
 # Links
+
 https://artmart-hd.herokuapp.com/
 https://github.com/hanandadras/ArtMart
