@@ -8,7 +8,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import { setContext } from '@apollo/client/link/context';
 import NoMatch from './pages/NoMatch';
-
+import Posts from './components/posts/post';
 
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -38,21 +38,21 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-      <div className="flex-column justify-flex-start min-100-vh">
-        <Header />
-        <div className="container">
-          <Switch>
-            <Route exact path="/" component={Home} ></Route>
-            <Route exact path="/login" component={Login} ></Route>
-            <Route exact path="/signup" component={Signup} ></Route>
+        <div className="flex-column justify-flex-start min-100-vh">
+          <Header />
+          <div className="container">
+            <Switch>
+              <Route exact path="/" component={Home} ></Route>
+              <Route exact path="/login" component={Login} ></Route>
+              <Route exact path="/signup" component={Signup} ></Route>
 
-            <Route component={NoMatch} />
-          </Switch>
-          
-          {/* {Auth.loggedIn() ? <Home />:<Signup/>} */}
+              <Route component={NoMatch} />
+            </Switch>
+            <Posts></Posts>
+            {/* {Auth.loggedIn() ? <Home />:<Signup/>} */}
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
       </Router>
     </ApolloProvider>
   );

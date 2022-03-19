@@ -1,10 +1,10 @@
 :root {
   --primary: #497573;
   --secondary: #63641c;
-  --tertiary: #148f87;
+  --tertiary: #e5f139;
   --quatrinary: #cadbda;
-  --light: #e1f5f4;
-  --dark: #6c7575;
+  --light: #cfd49f;
+  --dark: #851f1f;
   --error: rgb(228, 46, 1);
   --border-radius: 0.3rem;
   --spacing-one: calc(1rem * 0.25);
@@ -12,6 +12,7 @@
   --spacing-three: 1rem;
   --spacing-four: calc(1rem * 1.5);
   --spacing-five: calc(1rem * 3);
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO5EItJDL2odjSprTuSZbxttCIehgQw44hvw&usqp=CAU");
 }
 
 * {
