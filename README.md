@@ -8,13 +8,15 @@ This is an online gallery/blog/marketplace for artists to showcase their work, s
 
 # Screenshot
 
+![Artmart](/client/public/img/Artmart.png "ARTMART")
+
 # Installation
 
 Node is used to install dependencies and npm start to connect the app.
 
 # Technologies used
 
-Mongodb, Express, React, cloudinary and Node.
+Mongodb, Express, React, Cloudinary and Node.
 
 # Roadmap
 
