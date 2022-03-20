@@ -2,12 +2,10 @@
 ArtMart
 
 # Description
-This is an online gallery/blog/marketplace for artists to showcase their work, show a description fo their work, get fans reactions and sell their pieces.
+This is an online gallery/blog/marketplace for artists to showcase their work, show a description fo their work, get fans reactions and sell their artwork.
 
 # Screenshot
-
-
-
+https://user-images.githubusercontent.com/91435315/159140769-1394786e-4794-4081-9edf-4d7274a01135.png
 
 
 # Installation
@@ -18,13 +16,13 @@ Mongodb, Express, React and Node.
 
 
 # Roadmap
-Future plans include using a geagraphic APIs to enable artists to pick their geographic region to show their artwork. 
+Future plans include using geographic APIs to enable artists to pick their geographic region to show their artwork. 
 Also, adding a payment feature to enable purchases to buy art or donations to help artists financially.
 
 
 # Authors and acknowledgment
-John Enriquez Perez
-Hanan Dadras
+John Enriquez Perez (github username: Juanjohn11 )
+Hanan Dadras (github username: hanandadras)
 
 # License
 MIT License
